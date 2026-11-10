@@ -11,7 +11,7 @@ const reviews = [
     name: "Mints",
     username: "@cabbagemints",
     rating: 5,
-    text: "i love koryn template so much",
+    text: "i love top template so much",
     pfp: "pfps/2.png",
     date: "September 2026"
   },
@@ -59,7 +59,7 @@ const reviews = [
     name: "vvsalra",
     username: "@vvsalra",
     rating: 5,
-    text: "I bought Bake a brainrot and its actually really good. It was cheap for this entire game and i really enjoy using this. Hopefully the game im making with it blows up. I was scared to pay koryn first but i did and he gave me the file. W mans and this guy is definitely trustworthy divass",
+    text: "I bought Bake a brainrot and its actually really good. It was cheap for this entire game and i really enjoy using this. Hopefully the game im making with it blows up. I was scared to pay toplua first but i did and he gave me the file. W mans and this guy is definitely trustworthy divass",
     pfp: "pfps/8.png",
     date: "September 2026"
   },
@@ -75,7 +75,7 @@ const reviews = [
     name: "Minty",
     username: "@mintydev",
     rating: 5,
-    text: "koryn cooked with this one the ui is clean",
+    text: "lua cooked with this one the ui is clean",
     pfp: "pfps/10.png",
     date: "September 2026"
   },
