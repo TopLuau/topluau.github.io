@@ -1,117 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TopLua — Roblox developer, scripter and UI designer with 6+ years of experience.">
-  <title>TopLua | Roblox Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TopLuau — full-stack developer in Japan. Rust tools, web products and Roblox systems. I run Bloxsupply, Lingucounter and Gavanor.">
+<meta name="theme-color" content="#131416">
+<link rel="canonical" href="https://topluau.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://topluau.github.io/">
+<meta property="og:title" content="TopLuau — Full-stack developer">
+<meta property="og:description" content="I build things for the web, the desktop and Roblox. Founder of Bloxsupply, Lingucounter and Gavanor.">
+<meta property="og:image" content="https://topluau.github.io/img/roblox-avatar.png">
+<meta name="twitter:card" content="summary">
+<title>TopLuau — Full-stack developer</title>
+<link rel="icon" href="toplua.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;else if(matchMedia('(prefers-color-scheme: light)').matches)document.documentElement.dataset.theme='light'}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar">
-  <div class="nav-inner">
-    <a class="brand" href="#about"><img src="toplua.png" alt="TopLua"></a>
-    <div class="nav-links">
-      <a href="#about">About</a><a href="#showcases">Showcases</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#top"><img src="toplua.png" alt="">TopLuau</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#roblox">Roblox</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle light and dark theme"><span id="themeIcon" aria-hidden="true">☀</span></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="eyebrow"><i class="dot"></i>Open to collaboration <span>·</span> Japan <span>·</span> <span id="clock">--:--</span> JST</p>
+      <h1>Hey, I’m <span class="scribble">TopLuau</span>.<br>I build things for the web, the desktop and Roblox.</h1>
+      <p class="lead">I’m a full-stack developer in Japan. I run three products myself, write open-source Rust, and have been making Roblox games and systems in Luau for 6+ years. Have a look around, and message me if something here is what you need.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">See what I’ve built</a>
+        <a class="btn" href="#contact">Say hi</a>
+      </div>
     </div>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
-  </div>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#about">About</a><a href="#showcases">Showcases</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
-  </div>
-</nav>
 
-<main>
-<section class="hero section" id="about">
-  <div class="status"><b></b>Available for Hire</div>
-  <div class="eyebrow">TOPLUA / ROBLOX DEVELOPER</div>
-  <h1><span class="headline-static">Building</span> <span id="changingText" class="changing-text">High-Performance</span><br><em>Interfaces &amp; Systems.</em></h1>
-  <p class="hero-copy">I build polished Roblox experiences with clean systems, responsive interfaces, satisfying game feel, and production-ready Luau. Focused on turning ideas into games that feel finished.</p>
-  <div class="actions">
-    <a class="button primary" href="#showcases">View Showcases <span>→</span></a>
-    <a class="button secondary" href="https://discord.com/users/1068287365182931066" target="_blank" rel="noopener noreferrer"><img src="discord.png" alt="">Message me on Discord</a>
-  </div>
+    <figure class="me" id="me">
+      <div class="me-frame">
+        <img id="meImg" src="img/roblox-avatar.png" alt="TopLuau’s Roblox avatar: black hair, sunglasses and a light grey suit">
+      </div>
+    </figure>
+  </section>
 
-  <div class="profile-stack">
-    <div class="profile-row">
-      <img src="toplua.png" alt="TopLua logo">
-      <div><strong>TOPLUA</strong><span>Developer · Scripter · UI Designer</span></div>
+  <section class="sec wrap" id="about">
+    <header class="sec-head"><h2>About</h2><span class="muted">The short version</span></header>
+    <div class="about">
+      <div class="about-text">
+        <p>I like building the whole thing: the frontend, the backend, the servers and the deploys. That’s how I ended up running <a href="https://bloxsupply.net" target="_blank" rel="noopener noreferrer">Bloxsupply</a>, <a href="https://lingucounter.com" target="_blank" rel="noopener noreferrer">Lingucounter</a> and <a href="https://gavanor.vercel.app/" target="_blank" rel="noopener noreferrer">Gavanor</a> by myself.</p>
+        <p>I also write open-source Rust, like <a href="https://github.com/TopLuau/ember-ide" target="_blank" rel="noopener noreferrer">Ember IDE</a>, a code editor, and <a href="https://github.com/TopLuau/scrawl" target="_blank" rel="noopener noreferrer">Scrawl</a>, a collaborative whiteboard. Both ship for Windows, macOS, Linux and Raspberry Pi.</p>
+        <p>And Roblox is still a big part of what I do: game systems, interfaces and templates in Luau.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Languages</dt><dd>Rust · TypeScript · C++ · Luau</dd></div>
+        <div><dt>Runs</dt><dd>3 live products</dd></div>
+        <div><dt>Open source</dt><dd>Ember IDE · Scrawl · CoreLoader</dd></div>
+        <div><dt>Roblox</dt><dd>6+ years</dd></div>
+        <div><dt>Based in</dt><dd>Japan</dd></div>
+      </dl>
     </div>
-    <div class="profile-row">
-      <img src="roblox.png" alt="Roblox">
-      <div><strong>TOPLUAU</strong><a href="https://www.roblox.com/users/3831052084/profile" target="_blank" rel="noopener noreferrer">Roblox Profile</a></div>
+  </section>
+
+  <section class="sec wrap" id="projects">
+    <header class="sec-head">
+      <h2>Things I’ve built</h2>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+    </header>
+    <div class="projects" id="projectList"></div>
+  </section>
+
+  <section class="sec wrap" id="roblox">
+    <header class="sec-head"><h2>Roblox &amp; Luau</h2><span class="muted">hover to preview, click to watch</span></header>
+    <p class="sec-lead">Game systems, interfaces and templates. Some of the templates are for sale on Bloxsupply, and <a href="https://github.com/TopLuau/CoreLoader" target="_blank" rel="noopener noreferrer">CoreLoader</a>, a loading screen, is open source.</p>
+    <div class="vids" id="vids"></div>
+  </section>
+
+  <section class="sec wrap" id="stack">
+    <header class="sec-head"><h2>What I use</h2></header>
+    <div class="stack" id="stackGrid"></div>
+    <header class="sec-head sub"><h2>More on GitHub</h2><span class="muted" id="repoStatus">live from the GitHub API</span></header>
+    <div class="repo-list" id="repoList"></div>
+  </section>
+
+  <section class="sec wrap" id="reviews">
+    <header class="sec-head"><h2>What people say</h2><span class="muted" id="vCount"></span></header>
+    <div class="v-layout">
+      <aside class="v-sum">
+        <div class="v-avg"><b id="vAvg">0.0</b><span><span class="stars" id="vStars" aria-hidden="true"></span><br><span class="muted" id="vFrom"></span></span></div>
+        <div class="v-bars" id="vBars" role="group" aria-label="Filter reviews by rating"></div>
+      </aside>
+      <div class="v-grid" id="vGrid" aria-live="polite"></div>
     </div>
-    <div class="profile-row last">
-      <img src="discord.png">
-      <div><strong>TOPLUAU</strong><a href="https://discord.com/users/1068287365182931066" target="_blank" rel="noopener noreferrer">Discord Profile</a></div>
+  </section>
+
+  <section class="sec wrap" id="contact">
+    <div class="contact">
+      <div class="c-left">
+        <img class="c-head" src="img/roblox-head.png" alt="">
+        <h2>Say hi.</h2>
+        <p>If you’ve got a project, an idea or just a question, message me. Discord is the fastest way to reach me, and I’m open to freelance work and collaboration.</p>
+      </div>
+      <div class="c-list">
+        <button class="c-row" id="copyDiscord"><span>Discord</span><b>Topluau</b><em>copy</em></button>
+        <a class="c-row" href="https://x.com/Topluau" target="_blank" rel="noopener noreferrer"><span>X</span><b>@Topluau</b><em>↗</em></a>
+        <a class="c-row" href="https://github.com/TopLuau" target="_blank" rel="noopener noreferrer"><span>GitHub</span><b>TopLuau</b><em>↗</em></a>
+        <a class="c-row" href="https://www.roblox.com/users/3831052084/profile" target="_blank" rel="noopener noreferrer"><span>Roblox</span><b>TopLuau</b><em>↗</em></a>
+      </div>
     </div>
-  </div>
-
-  <div class="hero-stats">
-    <div><strong>6+</strong><span>Years Experience</span></div>
-    <div><strong>ROBLOX</strong><span>Game Development</span></div>
-    <div><strong>LUAU</strong><span>Systems &amp; Scripting</span></div>
-  </div>
-</section>
-
-<section class="section bordered" id="showcases">
-  <div class="heading"><small>SHOWCASES</small><h2>Built to look good. Built to feel good.</h2><p>Watch real project showcases and see the systems, interfaces, and game mechanics in action.</p></div>
-  <div class="showcase-grid">
-    <button class="showcase-card" data-video="videos/sal.mp4" data-title="Steal A Luckyblock">
-      <div class="thumbnail thumb-one"><video muted playsinline preload="metadata" src="videos/sal.mp4"></video><span class="thumb-label">GAME SHOWCASE</span><i class="play">▶</i></div>
-      <div class="showcase-info"><strong>Steal A Luckyblock</strong><span>Systems · Gameplay · Luau</span></div>
-    </button>
-    <button class="showcase-card" data-video="videos/bab.mp4" data-title="Bake A Brainrot">
-      <div class="thumbnail thumb-two"><video muted playsinline preload="metadata" src="videos/bab.mp4"></video><span class="thumb-label">GAME SHOWCASE</span><i class="play">▶</i></div>
-      <div class="showcase-info"><strong>Bake A Brainrot</strong><span>Systems · UI · Gameplay</span></div>
-    </button>
-    <button class="showcase-card" data-video="videos/word.mp4" data-title="Word RNG Template">
-      <div class="thumbnail thumb-three"><video muted playsinline preload="metadata" src="videos/word.mp4"></video><span class="thumb-label">TEMPLATE</span><i class="play">▶</i></div>
-      <div class="showcase-info"><strong>Word RNG Template</strong><span>Template · Systems · UI</span></div>
-    </button>
-    <button class="showcase-card" data-video="videos/soccer.mp4" data-title="R6 Soccer Game">
-      <div class="thumbnail thumb-four"><video muted playsinline preload="metadata" src="videos/soccer.mp4"></video><span class="thumb-label">GAME SHOWCASE</span><i class="play">▶</i></div>
-      <div class="showcase-info"><strong>R6 Soccer Game</strong><span>R6 · Gameplay · Systems</span></div>
-    </button>
-    <button class="showcase-card" data-video="videos/pets.mp4" data-title="Pet System">
-      <div class="thumbnail thumb-five"><video muted playsinline preload="metadata" src="videos/pets.mp4"></video><span class="thumb-label">SYSTEM SHOWCASE</span><i class="play">▶</i></div>
-      <div class="showcase-info"><strong>Pet System</strong><span>Systems · UI · Gameplay</span></div>
-    </button>
-    <button class="showcase-card" data-video="videos/roll.mp4" data-title="Roll A Brainrot">
-      <div class="thumbnail thumb-six"><video muted playsinline preload="metadata" src="videos/roll.mp4"></video><span class="thumb-label">GAME SHOWCASE</span><i class="play">▶</i></div>
-      <div class="showcase-info"><strong>Roll A Brainrot</strong><span>Systems · Gameplay · Luau</span></div>
-    </button>
-  </div>
-</section>
-
-<section class="section bordered" id="reviews">
-  <div class="heading"><small>VOUCHES</small><h2>Reviews from clients</h2><p>Feedback from people I have worked with across Roblox development, scripting, UI, and systems.</p></div>
-  <div class="reviews-grid" id="reviewsGrid"></div>
-</section>
-
-<section class="section bordered contact-section" id="contact">
-  <div class="contact-card">
-    <small>CONTACT</small>
-    <h2>Have a Roblox project in mind?</h2>
-    <p>For commissions, systems, UI work, or collaboration, contact me directly through Discord.</p>
-    <a class="discord-button" href="https://discord.com/users/1068287365182931066" target="_blank" rel="noopener noreferrer"><img src="discord.png" alt="">Message me on Discord</a>
-  </div>
-</section>
+  </section>
 </main>
 
-<div class="video-modal" id="videoModal" aria-hidden="true">
-  <div class="modal-backdrop" data-close></div>
-  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="videoTitle">
-    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
-    <video id="showcaseVideo" controls playsinline></video>
-    <div class="modal-title" id="videoTitle"></div>
+<footer class="foot wrap"><span>© <span id="year"></span> TopLuau</span><a href="#top">Back to top ↑</a></footer>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-bg" data-close></div>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-x" id="modalX" aria-label="Close">Close ×</button>
+    <video id="modalVideo" controls playsinline></video>
+    <div class="modal-title" id="modalTitle"></div>
   </div>
 </div>
 
-<footer><span>© <b id="year"></b> TopLua.</span><a href="#about">Back to top ↑</a></footer>
 <script src="reviews.js"></script>
 <script src="script.js"></script>
 </body>
